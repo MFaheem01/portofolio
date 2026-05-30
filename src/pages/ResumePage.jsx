@@ -20,12 +20,6 @@ const ResumePage = () => {
                 period: 'Feb 2025',
                 description: 'Developed and maintained responsive websites for clients across multiple niches, including boat trips, home appliances, and technical platforms. Built and optimized web pages with clean, structured code to ensure fast load times and cross-browser compatibility. Implemented SEO best practices including JSON-LD schema markup, and worked closely with design and marketing teams.',
             },
-            {
-                title: 'Freelance Web Developer',
-                company: 'Self-Employed',
-                period: 'Ongoing',
-                description: 'Developing SEO-optimized websites, delivering responsive, well-structured, and high-performing web solutions tailored directly to clients\' requirements and business goals.',
-            },
         ],
         education: [
             {
@@ -38,7 +32,7 @@ const ResumePage = () => {
         skills: {
             frontend: ['HTML', 'Bootstrap', 'Tailwind', 'JavaScript', 'React.js', 'Responsive Design'],
             backend: ['Node.js', 'Express.js', 'REST APIs', 'JSON Schema', 'SEO Optimization', 'Database Basics'],
-            other: ['Adobe Photoshop', 'Basic WordPress', 'Link Building', 'Yoast / Rank Math SEO', 'Keyword Research', 'Domain Authority Growth'],
+            other: ['Adobe Photoshop', 'Basic WordPress', 'Link Building', 'Domain Authority Growth'],
         },
     };
 
@@ -75,7 +69,7 @@ const ResumePage = () => {
                             >
                                 <div className="flex items-center gap-4 mb-8">
                                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                                        <Briefcase className="text-primary" size={24} />
+                                        <Briefcase className="text-primary" size={30} />
                                     </div>
                                     <h2 className="text-3xl font-semibold text-foreground">Professional experience</h2>
                                 </div>
@@ -115,7 +109,7 @@ const ResumePage = () => {
                             >
                                 <div className="flex items-center gap-4 mb-8">
                                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                                        <GraduationCap className="text-primary" size={24} />
+                                        <GraduationCap className="text-primary" size={30} />
                                     </div>
                                     <h2 className="text-3xl font-semibold text-foreground">Education</h2>
                                 </div>
@@ -155,7 +149,7 @@ const ResumePage = () => {
                             >
                                 <div className="flex items-center gap-4 mb-8">
                                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                                        <Award className="text-primary" size={24} />
+                                        <Award className="text-primary" size={30} />
                                     </div>
                                     <h2 className="text-3xl font-semibold text-foreground">Skills</h2>
                                 </div>
@@ -177,7 +171,7 @@ const ResumePage = () => {
                                             ))}
                                         </ul>
                                     </motion.div>
- 
+
                                     <motion.div
                                         initial={{ opacity: 0, y: 20 }}
                                         whileInView={{ opacity: 1, y: 0 }}
@@ -195,7 +189,7 @@ const ResumePage = () => {
                                             ))}
                                         </ul>
                                     </motion.div>
- 
+
                                     <motion.div
                                         initial={{ opacity: 0, y: 20 }}
                                         whileInView={{ opacity: 1, y: 0 }}

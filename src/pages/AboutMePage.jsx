@@ -44,20 +44,13 @@ const AboutMePage = () => {
             title: 'Backend Development',
             description: 'Crafting reliable, scalable server-side systems and APIs using Node.js and Express.js to power robust dynamic applications and handle complex data.',
         },
-        {
-            icon: Palette,
-            title: 'Branding & CMS',
-            description: 'Designing beautiful visual assets with Adobe Photoshop and configuring optimized, search-engine-ready websites with Basic WordPress.',
-        },
     ];
 
     const funFacts = [
-        { value: 25, suffix: '+', label: 'Projects Completed' },
+        { value: 20, suffix: '+', label: 'Projects Completed' },
         { value: 15, suffix: '+', label: 'Happy Clients' },
-        { value: 2, suffix: ' Yrs', label: 'Work Experience' },
-        { value: 8, suffix: '+', label: 'Core Skills' },
+        { value: 1, suffix: '+', label: 'Work Experience' },
         { value: 100, suffix: '%', label: 'Client Satisfaction' },
-        { value: 99, suffix: '%', label: 'SEO Success Rate' },
     ];
 
     return (
@@ -104,7 +97,7 @@ const AboutMePage = () => {
                                             className="flex gap-6"
                                         >
                                             <div className="flex-shrink-0 w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center">
-                                                <skill.icon className="text-primary" size={32} />
+                                                <skill.icon className="text-primary" size={30} />
                                             </div>
                                             <div>
                                                 <h3 className="text-xl font-semibold text-foreground mb-2">{skill.title}</h3>

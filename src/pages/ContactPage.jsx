@@ -174,7 +174,7 @@ const ContactPage = () => {
                     }} viewport={{
                         once: true
                     }} className="text-center py-12 border-t border-border">
-                        <p className="text-2xl font-semibold text-primary">Thanks for your patience!</p>
+                        <p className="text-3xl font-semibold text-primary">Thanks for your patience!</p>
                         <p className="text-muted-foreground mt-2">I'll get back to you as soon as possible.</p>
                     </motion.div>
                 </div>

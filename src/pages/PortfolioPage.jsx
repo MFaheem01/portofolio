@@ -8,47 +8,47 @@ import PortfolioCard from '../components/PortfolioCard.jsx';
 const PortfolioPage = () => {
     const [activeCategory, setActiveCategory] = useState('ALL');
 
-    const categories = ['ALL', 'FRONTEND', 'BACKEND', 'SEO & CMS'];
+    const categories = ['ALL'];
 
     const portfolioItems = [
         {
-            category: 'FRONTEND',
+            category: 'Full Stack',
             title: 'Boat Trip Booking System',
             image: 'https://images.unsplash.com/photo-1505118380757-91f5f5632de0',
         },
         {
-            category: 'FRONTEND',
+            category: 'Full Stack',
             title: 'Technical Support Platform',
             image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d',
         },
         {
-            category: 'FRONTEND',
+            category: 'Full Stack',
             title: 'Responsive Portfolio Site',
             image: 'https://images.unsplash.com/photo-1547082299-de196ea013d6',
         },
         {
-            category: 'BACKEND',
+            category: 'Full Stack',
             title: 'Custom RESTful API Service',
             image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c',
         },
         {
-            category: 'BACKEND',
+            category: 'Full Stack',
             title: 'Secure Authentication System',
             image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3',
         },
         {
-            category: 'SEO & CMS',
+            category: 'Full Stack',
             title: 'Shopify App & Landing Page',
             image: 'https://images.unsplash.com/photo-1661956602116-aa6865609028',
         },
         {
-            category: 'SEO & CMS',
+            category: 'Full Stack',
             title: 'Optimized Appliances Niche Site',
             image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a',
         },
         {
-            category: 'SEO & CMS',
-            title: 'SEO & JSON-LD Schema Marketing',
+            category: 'Full Stack',
+            title: 'JSON-LD Schema Marketing',
             image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f',
         },
     ];
@@ -93,8 +93,8 @@ const PortfolioPage = () => {
                                     key={category}
                                     onClick={() => setActiveCategory(category)}
                                     className={`px-6 py-3 rounded-full font-medium text-sm tracking-wide transition-all duration-300 ${activeCategory === category
-                                            ? 'bg-primary text-secondary'
-                                            : 'bg-muted text-muted-foreground hover:bg-muted/80'
+                                        ? 'bg-primary text-secondary'
+                                        : 'bg-muted text-muted-foreground hover:bg-muted/80'
                                         }`}
                                 >
                                     {category}

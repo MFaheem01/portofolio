@@ -1,13 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Linkedin, Instagram, Twitter, Dribbble, Github } from 'lucide-react';
+import { Linkedin, Instagram, Facebook, Phone, Github } from 'lucide-react';
 
 const SocialIcons = ({ className = '' }) => {
     const socialLinks = [
         { icon: Linkedin, href: 'https://www.linkedin.com/in/m-faheem-a84532380/', label: 'LinkedIn' },
-        { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
-        { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
-        { icon: Dribbble, href: 'https://dribbble.com', label: 'Dribbble' },
+        { icon: Instagram, href: 'https://www.instagram.com/feem0_?igsh=MTlxM3liYmR0ZjI4Mg==', label: 'Instagram' },
+        { icon: Phone, href: 'https://wa.me/qr/VVWYQRB4T6MWN1', label: 'Phone' },
+        { icon: Facebook, href: 'https://www.facebook.com/share/18iYYpVyGv/', label: 'Facebook' },
         { icon: Github, href: 'https://github.com', label: 'GitHub' },
     ];
 
