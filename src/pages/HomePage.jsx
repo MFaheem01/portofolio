@@ -6,7 +6,7 @@ import { Home, User, FileText, Briefcase, Star, Mail } from 'lucide-react';
 import Button from '../components/Button.jsx';
 import SocialIcons from '../components/SocialIcons.jsx';
 
-/* ─── Arc geometry ────────────────────────────────────────────────────────── */
+/*  Arc geometry */
 const W = 490;   // container width  (px)
 const H = 410;   // container height (px)
 
@@ -20,7 +20,7 @@ const getBezier = (t) => ({
     y: (1 - t) * (1 - t) * P0.y + 2 * t * (1 - t) * P1.y + t * t * P2.y,
 });
 
-/* ─── Navigation items ────────────────────────────────────────────────────── */
+/* Navigation items */
 const navItems = [
     { path: '/', label: 'Home', icon: Home },
     { path: '/about', label: 'About', icon: User },
@@ -133,11 +133,11 @@ const HomePage = () => {
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ delay: 0.4, duration: 0.6 }}
-                            className="flex items-center justify-center lg:justify-end"
+                            className="flex items-center justify-center lg:justify-end overflow-hidden h-[315px] sm:h-[300px] md:h-[350px] lg:h-auto"
                         >
                             {/* Desktop arc layout */}
                             <div
-                                className="relative ms-20 flex-shrink-0"
+                                className="relative ms-20 lg:ms-0 flex-shrink-0 scale-[0.79] sm:scale-[0.70] md:scale-[0.85] lg:scale-100 origin-center"
                                 style={{ width: `${W}px`, height: `${H}px` }}
                             >
                                 {/* SVG: arc path + anchor dots */}
@@ -224,20 +224,6 @@ const HomePage = () => {
                                     );
                                 })}
                             </div>
-
-                            {/* ── Mobile: photo only ── */}
-                            {/* <div className="lg:hidden">
-                                <div className="relative">
-                                    <div className="w-60 h-60 sm:w-72 sm:h-72 rounded-full overflow-hidden border-8 border-primary shadow-2xl">
-                                        <img
-                                            src="/images/hero-seaction-images.jpg"
-                                            alt="Muhammad Faheem – Professional portrait"
-                                            className="w-full h-full object-cover"
-                                        />
-                                    </div>
-                                    <div className="absolute -inset-3 rounded-full border-2 border-primary/25" />
-                                </div>
-                            </div> */}
                         </motion.div>
 
                     </div>
