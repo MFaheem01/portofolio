@@ -137,7 +137,7 @@ const HomePage = () => {
                         >
                             {/* Desktop arc layout */}
                             <div
-                                className="relative ms-20 lg:ms-0 flex-shrink-0 scale-[0.79] sm:scale-[0.70] md:scale-[0.85] lg:scale-100 origin-center"
+                                className="relative ms-20 lg:ms-0 flex-shrink-0 scale-[0.73] sm:scale-[0.70] md:scale-[0.85] lg:scale-100 origin-center"
                                 style={{ width: `${W}px`, height: `${H}px` }}
                             >
                                 {/* SVG: arc path + anchor dots */}
