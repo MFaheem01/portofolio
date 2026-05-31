@@ -19,16 +19,16 @@ const Sidebar = () => {
 
     const SidebarContent = () => (
         <>
-            <div className="flex flex-col items-center pt-12 pb-8">
-                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-secondary mb-6">
+            <div className="flex flex-col bg-slate-900 items-center pt-12 pb-8">
+                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-secondary mb-6">
                     <img
                         src="/images/hero-seaction-images.jpg"
-                        alt="Muhammad Faheem - Full Stack Web Developer"
+                        alt="Muhammad Faheem - MERN Stack Web Developer"
                         className="w-full h-full object-cover"
                     />
                 </div>
-                <h2 className="text-2xl font-bold text-secondary">Muhammad Faheem</h2>
-                <p className="text-secondary/80 text-sm mt-1">Full Stack Web Developer</p>
+                <h2 className="text-2xl font-bold text-primary underline underline-offset-4 decoration-primary">Muhammad Faheem</h2>
+                <p className="text-primary underline underline-offset-4 decoration-primary text-sm mt-1">MERN Stack Web Developer</p>
             </div>
 
             <nav className="flex-1 px-6">

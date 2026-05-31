@@ -70,11 +70,19 @@ const AboutMePage = () => {
                             animate={{ opacity: 1, y: 0 }}
                             className="mb-16"
                         >
-                            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6" style={{ letterSpacing: '-0.02em' }}>
+                            <h1 className="page-heading text-foreground mb-4 flex items-center">
+                                <span className="text-primary mb-4 lg:mb-4 md:mb-3" aria-hidden="true">→</span>
                                 About me
                             </h1>
                             <p className="text-lg leading-relaxed text-muted-foreground max-w-3xl">
-                                I am Muhammad Faheem, a Full Stack web developer with 1.5 years experience building responsive, high-performance websites and web applications. Skilled in using modern development tools and frameworks, I craft clean and well-structured code that delivers seamless user experiences and drives results.
+                                I am Muhammad Faheem, a Full-Stack Web Developer with 1.5
+                                years of experience building responsive, user-friendly, and high
+                                performance websites and web applications. Proficient in modern
+                                development tools and frameworks, I specialize in creating clean,
+                                scalable, and well-structured solutions that deliver seamless user
+                                experiences and support business growth. Passionate about
+                                continuous learning and innovation, I strive to develop efficient
+                                digital products that combine functionality with exceptional design.
                             </p>
                         </motion.div>
 

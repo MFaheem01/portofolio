@@ -53,7 +53,8 @@ const ResumePage = () => {
                             animate={{ opacity: 1, y: 0 }}
                             className="mb-16"
                         >
-                            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6" style={{ letterSpacing: '-0.02em' }}>
+                            <h1 className="page-heading text-foreground mb-4 flex items-center">
+                                <span className="text-primary mb-4 lg:mb-5 md:mb-3" aria-hidden="true">→</span>
                                 Resume
                             </h1>
                             <p className="text-lg leading-relaxed text-muted-foreground max-w-3xl">

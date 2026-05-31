@@ -22,12 +22,12 @@ const getBezier = (t) => ({
 
 /* ─── Navigation items ────────────────────────────────────────────────────── */
 const navItems = [
-    { path: '/',             label: 'Home',         icon: Home },
-    { path: '/about',        label: 'About',        icon: User },
-    { path: '/resume',       label: 'Resume',       icon: FileText },
-    { path: '/portfolio',    label: 'Portfolio',    icon: Briefcase },
+    { path: '/', label: 'Home', icon: Home },
+    { path: '/about', label: 'About', icon: User },
+    { path: '/resume', label: 'Resume', icon: FileText },
+    { path: '/portfolio', label: 'Portfolio', icon: Briefcase },
     { path: '/testimonials', label: 'Testimonials', icon: Star },
-    { path: '/contact',      label: 'Contact',      icon: Mail },
+    { path: '/contact', label: 'Contact', icon: Mail },
 ];
 
 // Pre-compute icon positions evenly spaced along the arc
@@ -35,7 +35,7 @@ const iconPositions = navItems.map((_, i) =>
     getBezier((i + 1) / (navItems.length + 1))
 );
 
-/* ─── Component ───────────────────────────────────────────────────────────── */
+// Component
 const HomePage = () => {
     const navigate = useNavigate();
     const location = useLocation();
@@ -58,7 +58,7 @@ const HomePage = () => {
                 <div className="container mx-auto px-6 lg:px-10 min-h-screen flex items-center">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center w-full py-16">
 
-                        {/* ── LEFT: Text content ───────────────────────────── */}
+                        {/* LEFT: Text content*/}
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
@@ -128,16 +128,16 @@ const HomePage = () => {
                             </motion.div>
                         </motion.div>
 
-                        {/* ── RIGHT: Profile photo + arc navigation ─────── */}
+                        {/* RIGHT: Profile photo + arc navigation */}
                         <motion.div
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ delay: 0.4, duration: 0.6 }}
                             className="flex items-center justify-center lg:justify-end"
                         >
-                            {/* ── Desktop arc layout ── */}
+                            {/* Desktop arc layout */}
                             <div
-                                className="relative hidden lg:block flex-shrink-0"
+                                className="relative ms-20 flex-shrink-0"
                                 style={{ width: `${W}px`, height: `${H}px` }}
                             >
                                 {/* SVG: arc path + anchor dots */}
@@ -192,7 +192,7 @@ const HomePage = () => {
                                             className="group absolute"
                                             style={{
                                                 left: `${pos.x - 22}px`,
-                                                top:  `${pos.y - 22}px`,
+                                                top: `${pos.y - 22}px`,
                                             }}
                                             initial={{ opacity: 0, scale: 0 }}
                                             animate={{ opacity: 1, scale: 1 }}
@@ -208,11 +208,10 @@ const HomePage = () => {
                                         >
                                             {/* Icon circle */}
                                             <div
-                                                className={`w-11 h-11 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 ${
-                                                    isActive
-                                                        ? 'bg-primary text-primary-foreground ring-4 ring-primary/30 scale-110'
-                                                        : 'bg-secondary text-primary hover:bg-primary hover:text-primary-foreground'
-                                                }`}
+                                                className={`w-11 h-11 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 ${isActive
+                                                    ? 'bg-primary text-primary-foreground ring-4 ring-primary/30 scale-110'
+                                                    : 'bg-secondary text-primary hover:bg-primary hover:text-primary-foreground'
+                                                    }`}
                                             >
                                                 <Icon size={18} />
                                             </div>
@@ -227,7 +226,7 @@ const HomePage = () => {
                             </div>
 
                             {/* ── Mobile: photo only ── */}
-                            <div className="lg:hidden">
+                            {/* <div className="lg:hidden">
                                 <div className="relative">
                                     <div className="w-60 h-60 sm:w-72 sm:h-72 rounded-full overflow-hidden border-8 border-primary shadow-2xl">
                                         <img
@@ -238,7 +237,7 @@ const HomePage = () => {
                                     </div>
                                     <div className="absolute -inset-3 rounded-full border-2 border-primary/25" />
                                 </div>
-                            </div>
+                            </div> */}
                         </motion.div>
 
                     </div>
