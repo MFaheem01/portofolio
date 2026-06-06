@@ -47,9 +47,8 @@ const AboutMePage = () => {
     ];
 
     const funFacts = [
-        { value: 20, suffix: '+', label: 'Projects Completed' },
-        { value: 15, suffix: '+', label: 'Happy Clients' },
-        { value: 1, suffix: '+', label: 'Work Experience' },
+        { value: 12, suffix: '+', label: 'Projects Completed' },
+        { value: 1.5, suffix: '+', label: 'Work Experience' },
         { value: 100, suffix: '%', label: 'Client Satisfaction' },
     ];
 
