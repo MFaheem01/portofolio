@@ -22,7 +22,7 @@ const Sidebar = () => {
             <div className="flex flex-col bg-slate-900 items-center pt-12 pb-8">
                 <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-secondary mb-6">
                     <img
-                        src="/images/hero-seaction-images.jpg"
+                        src="/images/hero-seaction-images"
                         alt="Muhammad Faheem - MERN Stack Web Developer"
                         className="w-full h-full object-cover"
                     />

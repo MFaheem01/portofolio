@@ -170,7 +170,7 @@ const HomePage = () => {
                                     >
                                         <div className="w-72 h-72 rounded-full overflow-hidden border-8 border-primary shadow-2xl">
                                             <img
-                                                src="/images/hero-seaction-images.jpg"
+                                                src="/images/hero-seaction-images"
                                                 alt="Muhammad Faheem – Professional portrait"
                                                 className="w-full h-full object-cover"
                                             />
