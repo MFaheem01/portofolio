@@ -31,7 +31,7 @@ const Sidebar = () => {
                 <p className="text-primary underline underline-offset-4 decoration-primary text-sm mt-1">MERN Stack Web Developer</p>
             </div>
 
-            <nav className="flex-1 px-6 h-auto">
+            <nav className="flex-1 px-6 py-1 h-auto">
                 <ul className="space-y-2">
                     {menuItems.map((item) => {
                         const isActive = location.pathname === item.path;
