@@ -19,7 +19,7 @@ const Sidebar = () => {
 
     const SidebarContent = () => (
         <>
-            <div className="flex flex-col bg-slate-900 items-center pt-12 pb-8">
+            <div className="flex flex-col bg-slate-900 items-center pt-8 pb-8">
                 <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-secondary mb-6">
                     <img
                         src="/images/hero-seaction-images"
@@ -31,7 +31,7 @@ const Sidebar = () => {
                 <p className="text-primary underline underline-offset-4 decoration-primary text-sm mt-1">MERN Stack Web Developer</p>
             </div>
 
-            <nav className="flex-1 px-6">
+            <nav className="flex-1 px-6 h-auto">
                 <ul className="space-y-2">
                     {menuItems.map((item) => {
                         const isActive = location.pathname === item.path;
@@ -52,12 +52,6 @@ const Sidebar = () => {
                     })}
                 </ul>
             </nav>
-
-            {/* <div className="px-6 pb-8">
-                <div className="flex justify-center gap-3">
-                    <SocialIcons className="flex-row" />
-                </div>
-            </div> */}
         </>
     );
 

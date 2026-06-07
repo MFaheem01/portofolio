@@ -10,6 +10,7 @@ import Button from '../components/Button.jsx';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
+import emailjs from "@emailjs/browser";
 const ContactPage = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -25,23 +26,32 @@ const ContactPage = () => {
         });
     };
     const handleSubmit = async e => {
-        e.preventDefault();
-        if (!formData.name || !formData.email || !formData.message) {
-            toast.error('Please fill in all required fields');
-            return;
-        }
-        setIsSubmitting(true);
-        setTimeout(() => {
-            toast.success('Message sent successfully');
-            setFormData({
-                name: '',
-                email: '',
-                subject: '',
-                message: ''
-            });
-            setIsSubmitting(false);
-        }, 1000);
-    };
+    e.preventDefault();
+    if (!formData.name || !formData.email || !formData.message) {
+        toast.error('Please fill in all required fields');
+        return;
+    }
+    setIsSubmitting(true);
+    try {
+        await emailjs.send(
+            'service_6bmyekf',
+            'template_okj7u29',
+            {
+                from_name: formData.name,
+                from_email: formData.email,
+                subject: formData.subject,
+                message: formData.message,
+            },
+            'Iq1dJKLqNTwIT7fe8'
+        );
+        toast.success('Message sent successfully!');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+    } catch (error) {
+        toast.error('Failed to send message. Please try again.');
+    } finally {
+        setIsSubmitting(false);
+    }
+};
     const contactInfo = [{
         icon: Mail,
         label: 'Email',
@@ -55,7 +65,7 @@ const ContactPage = () => {
     }, {
         icon: MapPin,
         label: 'Location',
-        value: 'Lahore, Pakistan',
+        value: 'Multan, Pakistan',
         href: null
     }];
     return <>
