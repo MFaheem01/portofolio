@@ -31,6 +31,12 @@ const PortfolioPage = () => {
         },
         {
             category: 'Full Stack',
+            title: 'E-Commerce Platform for Scrap and Waste Management Services',
+            image: '/images/ascrap-web.png',
+            itemUrl: 'https://www.ascrap.online/',
+        },
+        {
+            category: 'Full Stack',
             title: 'Organic & Tasty Food for your Table.',
             image: '/images/the-cove-web.png',
             itemUrl: 'https://thecove.jojig.shop/',
