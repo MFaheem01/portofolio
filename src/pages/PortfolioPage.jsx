@@ -32,7 +32,7 @@ const PortfolioPage = () => {
         {
             category: 'Full Stack',
             title: 'E-Commerce Platform for Scrap and Waste Management Services',
-            image: '/images/ascrap-web.png',
+            image: '/images/Ascrap.online-web.png',
             itemUrl: 'https://www.ascrap.online/',
         },
         {
