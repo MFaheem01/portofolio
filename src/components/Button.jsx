@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const Button = ({ children, variant = 'primary', className = '', onClick, type = 'button', disabled = false }) => {
-    const baseStyles = 'px-8 py-3 rounded-full font-medium text-sm tracking-wide transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed';
+    const baseStyles = 'cursor-target px-8 py-3 rounded-full font-medium text-sm tracking-wide transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed';
 
     const variants = {
         primary: 'bg-secondary text-primary hover:bg-secondary/90 active:scale-[0.98]',

@@ -122,7 +122,7 @@ const ContactPage = () => {
                                     </div>
                                     <div>
                                         <p className="text-sm text-muted-foreground mb-1">{info.label}</p>
-                                        {info.href ? <a href={info.href} className="text-foreground font-medium hover:text-primary transition-colors duration-200">
+                                        {info.href ? <a href={info.href} className="cursor-target text-foreground font-medium hover:text-primary transition-colors duration-200">
                                             {info.value}
                                         </a> : <p className="text-foreground font-medium">{info.value}</p>}
                                     </div>
