@@ -15,6 +15,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       onwarn(warning, warn) {
+        // zod ki harmless @__PURE__ warnings ignore karo
         if (
           warning.code === 'INVALID_ANNOTATION' &&
           warning.id?.includes('node_modules/zod')
